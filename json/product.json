@@ -1,0 +1,52 @@
+{
+	"productInfo": [{
+		"productImage": "images/261822_6-nutrela-soya-mini-chunk.jpg",
+		"brandName": "Nutrela",
+		"prodName": "Soya Chunk",
+		"packDetail": "06/16",
+		"price": "45"
+	} ,{
+		"productImage": "images/268037_1-mtr-powder-turmeric.jpg",
+		"brandName": "MTR",
+		"prodName": "Turmeric",
+		"packDetail": "06/16",
+		"price": "50"
+	} ,{
+		"productImage": "images/268040_1-mtr-powder-coriander.jpg",
+		"brandName": "MTR",
+		"prodName": "Coriander",
+		"packDetail": "06/16",
+		"price": "357"
+	},{
+		"productImage": "images/10000418_8-bb-royal-green-moong-splitchilka.jpg",
+		"brandName": "Royal",
+		"prodName": "Moong Daal",
+		"packDetail": "06/16",
+		"price": "105"
+	},{
+		"productImage": "images/10000425_9-bb-royal-toor-dalarhar-dal-desi.jpg",
+		"brandName": "Royal",
+		"prodName": "Toor Daal",
+		"packDetail": "06/16",
+		"price": "90"
+	},{
+		"productImage": "images/268037_1-mtr-powder-turmeric.jpg",
+		"brandName": "MTR",
+		"prodName": "Turmeric",
+		"packDetail": "06/16",
+		"price": "189"
+	} ,{
+		"productImage": "images/268040_1-mtr-powder-coriander.jpg",
+		"brandName": "MTR",
+		"prodName": "Coriander",
+		"packDetail": "06/16",
+		"price": "175"
+	},{
+		"productImage": "images/91TIkGjwgUL._SL1500_.jpg",
+		"brandName": "HOMEMADE",
+		"prodName": "Ginger Paste",
+		"packDetail": "06/16",
+		"price": "123"
+	}
+	]
+}

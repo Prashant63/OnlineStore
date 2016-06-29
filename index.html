@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Coviam Online Store</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style/css/bootstrap.min.css">
+		<link rel="stylesheet" href="style/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="style/shopping.css">
+		<script src="script/angular.min.js"></script>
+		<script src="script/app.js"></script>
+		<script src="service/productDetailService.js"></script>
+		<script src="service/productStorageService.js"></script>
+		<script src="controller/productCtrl.js"></script>
+		<script src="controller/directive/navBarDirective.js"></script>
+		<script src="controller/directive/productDetailDirective.js"></script>
+		<script src="controller/directive/storeCart.js"></script>
+	</head>
+	<body>
+		<div ng-app="app">
+			<!-- Show Nav Bar -->
+			<nav-bar></nav-bar>
+
+			<div class="well well-lg">
+				<img src="images/coviam_transparent_logo.png"/>
+				<div><small><em>Fastest growing online product store</em></small></div>
+				<div class="about"><h2>WE INNOVATE IDEA</h2><p>We serve better in traditional and domestic markets with the power of our ideas.</p></div>
+			</div>
+
+			<div class="container" ng-controller="shoppingKart">
+				<div class="jumbotron" id="menu">
+					<product-detail products="products" add-to-cart="addToCart" remove-from-cart="removeFromCart" product-counter="productCounter"></product-detail>
+				</div>
+				<store-cart class="cart" product-counter="productCounter" show-cart="showCart" get-price="getPrice" total-items-in-cart="totalItemsInCart" get-total-price="getTotalPrice"></store-cart>
+			</div>
+
+			<div class="panel panel-default">
+					<div class="panel-footer">
+						<span>Follow us:</span>
+						<span><i class="fa fa-facebook"></i></span>
+						<span><i class="fa fa-linkedin"></i></span>
+						<span><i class="fa fa-twitter"></i></span>
+						<span>Contact Us - info@coviam.com | 099800 03816</span>
+					</div>
+			</div>
+
+		</div>
+	</body>
+</html>

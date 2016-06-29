@@ -1,0 +1,31 @@
+<table ng-if="showCart" class="table">
+	<thead>	
+		<tr>
+			<th colspan="2">Your cart summary</th>
+			<th class="glyphicon glyphicon-shopping-cart"></th>
+		<tr>
+		<tr>
+			<th>Items in cart</th>
+			<th colspan="2">Total Rs.</th>
+		</tr>
+		<tr>
+			<td>{{totalItemsInCart}}</td>
+			<td colspan="2">{{getTotalPrice()}}</td>
+		</tr>
+		<tr>
+			<th>Product</th>
+			<th>Quantity</th>
+			<th>Total Rs.</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="(key, value) in productCounter">
+				<td>{{key}}</td>
+				<td>{{value}}</td>
+				<td>{{getPrice(key, value)}}</td>
+		</tr>
+		<tr>
+			<td colspan="3">checkout</td>
+		</tr>
+	</tbody>
+</table>

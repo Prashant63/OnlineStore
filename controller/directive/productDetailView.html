@@ -1,0 +1,18 @@
+<div class="col-sm-3 showProduct" ng-repeat="product in products.productInfo | limitTo : 8">
+	<ul class="list-group">
+		<li class="list-group-item"><img src="{{product.productImage}}" class="productimg"></li>
+		<li class="list-group-item">{{product.brandName}}</li>
+		<li class="list-group-item">{{product.prodName}}</li>
+		<li class="list-group-item">{{product.price | currency:"&#8377;"}}</li>
+		<li class="list-group-item">
+			<button ng-if="productCounter[product.prodName]" ng-click="removeFromCart(product)">-</button>
+			<button ng-if="!productCounter[product.prodName]"ng-click="addToCart(product)">Add to cart</button>
+			<span ng-if="productCounter[product.prodName]">{{productCounter[product.prodName]}} in cart</span>
+			<button ng-if="productCounter[product.prodName]" ng-click="addToCart(product)">+</button>
+		</li>
+	</ul>
+</div>
+<ul class="pager">
+	<li class="previous"><a href="#">Previous</a></li>
+	<li class="next"><a href="#">Next</a></li>
+</ul>
