@@ -10,18 +10,8 @@ store.directive('productDetail',function(){
 			products: '=',
 			addToCart: '=',
 			removeFromCart: '=',
-			productCounter: '=',
-			previous: '=',
-			next: '=',
-			offset: '=',
-			perPage: '=',
-			allProduct: '='
+			productCounter: '='
 		},
-		templateUrl: 'controller/directive/productDetailView.html',
-		link: function($scope){
-			/*$scope.on('productsListUpdate', function(event, args){
-				$scope.products = args.product.productInfo;
-			});*/
-		}
+		templateUrl: 'controller/directive/productDetailView.html'
 	};
 });
