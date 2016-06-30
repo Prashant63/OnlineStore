@@ -100,6 +100,9 @@ table{
 	clear:both;
 	margin-bottom:0px;
 	border-radius:0px;
+	position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .panel-footer span:not(:first-child):not(:last-child){
@@ -109,6 +112,19 @@ table{
 .panel-footer span:last-child{
 	float:right;
 }
+
+div#page span{
+	padding: 1%;
+    border-radius: 14px;
+    background-color: #eee;
+    color: #fff;
+    text-decoration: none;
+}
+
+div#page span a:hover{
+	text-decoration: none;
+}
+
 
 @media screen and (max-width: 1200px){
 	.jumbotron{

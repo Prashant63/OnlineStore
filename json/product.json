@@ -30,23 +30,29 @@
 		"packDetail": "06/16",
 		"price": "90"
 	},{
-		"productImage": "images/268037_1-mtr-powder-turmeric.jpg",
-		"brandName": "MTR",
-		"prodName": "Turmeric",
-		"packDetail": "06/16",
-		"price": "189"
-	} ,{
-		"productImage": "images/268040_1-mtr-powder-coriander.jpg",
-		"brandName": "MTR",
-		"prodName": "Coriander",
-		"packDetail": "06/16",
-		"price": "175"
-	},{
 		"productImage": "images/91TIkGjwgUL._SL1500_.jpg",
 		"brandName": "HOMEMADE",
 		"prodName": "Ginger Paste",
 		"packDetail": "06/16",
 		"price": "123"
+	},{
+		"productImage": "images/40069125_2-happy-chef-conserve-strawberry.jpg",
+		"brandName": "HAPPYCHEF",
+		"prodName": "Strawberry Jam",
+		"packDetail": "06/16",
+		"price": "103"
+	},{
+		"productImage": "images/411w1O8s+zL.jpg",
+		"brandName": "KiSSAN",
+		"prodName": "Mixed Fruit Jam",
+		"packDetail": "06/16",
+		"price": "89"
+	},{
+		"productImage": "images/81hbFQwBEoL._SL1500_.jpg",
+		"brandName": "FORTUNE",
+		"prodName": "Soya Granules",
+		"packDetail": "06/16",
+		"price": "113"
 	}
 	]
 }

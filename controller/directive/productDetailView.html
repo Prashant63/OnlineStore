@@ -1,4 +1,4 @@
-<div class="col-sm-3 showProduct" ng-repeat="product in products.productInfo | limitTo : 8">
+<div class="col-sm-3 showProduct" ng-repeat="product in products | limitTo : 8">
 	<ul class="list-group">
 		<li class="list-group-item"><img src="{{product.productImage}}" class="productimg"></li>
 		<li class="list-group-item">{{product.brandName}}</li>
@@ -12,7 +12,3 @@
 		</li>
 	</ul>
 </div>
-<ul class="pager">
-	<li class="previous"><a href="#">Previous</a></li>
-	<li class="next"><a href="#">Next</a></li>
-</ul>

@@ -66,15 +66,39 @@ store.controller("shoppingKart",["$scope", "productDetailService", "productStora
 			}
 			return price;
 			
-		}
+		};
+
+		$scope.paginate = function(){
+			if($scope.products != null && $scope.products.productInfo != null){
+				$scope.productsPerPage = $scope.products.productInfo.slice($scope.offset, $scope.offset + $scope.perPage);
+			}
+		};
+
+		$scope.previous = function(){
+			$scope.offset = $scope.offset - $scope.perPage;
+		};
+
+		$scope.next = function(){
+			$scope.offset = $scope.offset + $scope.perPage;
+		};
+
+		$scope.$watch('offset', function(){
+			$scope.paginate();
+		});
+
+		//$scope.$broadCast("productsListUpdate", {product : $scope.products});
 
 		var init = function(){
 			$scope.products = [];
 			$scope.productInCart = [];
 			$scope.productCounter = [];
 			$scope.addProductToCart = [];
+			$scope.perPage = 8;
+			$scope.offset = 0;
 			productDetailService.get().then(function (data){
 				$scope.products = data.data;
+				$scope.allProduct = $scope.products.productInfo.length;
+				$scope.paginate();
 			});
 			$scope.productCounter = productStorageService.get({
 											key: "storedProductQuantity",
